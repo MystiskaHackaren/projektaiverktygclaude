@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude.ai | Projekt AI-Verktyg - Erik Na24B</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        :root {
+            --claude-orange: #FF6B4A;
+            --dark: #0F0F0F;
+            --gray: #1C1C1C;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background-color: var(--dark);
+            color: #EDEDED;
+            line-height: 1.75;
+        }
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            background: rgba(15,15,15,0.98);
+            backdrop-filter: blur(12px);
+            z-index: 1000;
+            border-bottom: 1px solid #333;
+        }
+        .nav-content {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo { font-size: 1.85rem; font-weight: 700; color: var(--claude-orange); }
+
+        .nav-links a {
+            color: #ddd;
+            text-decoration: none;
+            margin-left: 2.5rem;
+            font-weight: 500;
+        }
+        .nav-links a:hover { color: var(--claude-orange); }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), url('images/claude-start.png') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        .hero-content h1 { font-size: 4.5rem; margin-bottom: 1rem; }
+        .hero-content p { font-size: 1.6rem; margin-bottom: 2.5rem; }
+
+        .btn {
+            background: var(--claude-orange);
+            color: white;
+            padding: 16px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.15rem;
+        }
+
+        .container { max-width: 1300px; margin: 0 auto; padding: 5rem 2rem; }
+        h2 { font-size: 3rem; text-align: center; margin: 3rem 0; color: var(--claude-orange); }
+
+        .section {
+            background: var(--gray);
+            padding: 3.5rem;
+            border-radius: 20px;
+            margin-bottom: 5rem;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .highlight {
+            background: rgba(255,107,74,0.12);
+            border-left: 7px solid var(--claude-orange);
+            padding: 1.8rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 16px;
+            margin: 2rem 0;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        img:hover { transform: scale(1.03); }
+
+        footer {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: #0A0A0A;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-content">
+            <div class="logo">Claude.ai</div>
+            <div class="nav-links">
+                <a href="#verktyg">Verktyget</a>
+                <a href="#exempel1">Exempel 1</a>
+                <a href="#exempel2">Exempel 2</a>
+                <a href="#analys">Analys</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content" style="max-width: 900px; margin: 0 auto; padding: 0 2rem;">
+            <h1>Claude.ai</h1>
+            <p>En av de mest kraftfulla AI-assistenterna på marknaden</p>
+            <a href="#verktyg" class="btn">Läs om projektet</a>
+        </div>
+    </section>
+
+    <div class="container">
+
+        <!-- Verktyget -->
+        <section id="verktyg" class="section">
+            <h2>Verktyget</h2>
+            <h3>Claude.ai</h3>
+            <p><strong>Länk:</strong> <a href="https://claude.ai" target="_blank">https://claude.ai</a><br>
+            <strong>Utvecklat av:</strong> Anthropic</p>
+            <p>Claude är en avancerad generativ AI med stort kontextfönster, hög resonemangsförmåga och stark självkritisk förmåga.</p>
+        </section>
+
+        <!-- Exempel 1 -->
+        <section id="exempel1" class="section">
+            <h2>Exempel 1 – Övningsprov i Religion</h2>
+            <div class="highlight">"Ge mig ett exempelprov på detta:"</div>
+            <img src="images/religion-prompt.png" alt="Prompt">
+            <img src="images/religion-prov.png" alt="Religionsprov">
+            <img src="images/religion-essas.png" alt="Essäfrågor">
+            <img src="images/religion-facit.png" alt="Facit">
+        </section>
+
+        <!-- Exempel 2 -->
+        <section id="exempel2" class="section">
+            <h2>Exempel 2 – AI-provet (med uppladdade PDF:er)</h2>
+            <img src="images/pdf-uppladdning.png" alt="PDF-uppladdning">
+            <img src="images/ai-prov-interaktiv.png" alt="Interaktivt prov">
+            <div class="highlight">"Kan du själv hitta några brister..."</div>
+            <img src="images/luckor-prompt.png" alt="Prompt självkritik">
+            <img src="images/luckor-svar.png" alt="Claude hittar luckor">
+        </section>
+
+        <!-- Analys -->
+        <section id="analys" class="section">
+            <h2>Min slutliga analys</h2>
+            <!-- Här kan du klistra in den utökade analysen från tidigare meddelande -->
+            <p><strong>Styrkor:</strong> Stort kontextfönster, bra på att skapa interaktiva prov, imponerande självkritik, hög textkvalitet.</p>
+            <p><strong>Svagheter:</strong> Kan utelämna information om prompten är otydlig, begränsad gratisversion.</p>
+            <p><strong>Sammanfattning:</strong> Claude.ai är en mycket stark allround-AI som presterar i toppklass för akademiskt arbete.</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Projekt AI-Verktyg – "There is an AI for that" • Vårterminen 2026</p>
+        <p>Skapad av <strong>Erik Na24B</strong></p>
+    </footer>
+
+    <script>
+        // Klickbara bilder öppnas i fullscreen
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('click', () => img.requestFullscreen());
+        });
+    </script>
+</body>
+</html>
